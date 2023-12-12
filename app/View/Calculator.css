@@ -1,0 +1,48 @@
+.calculator
+{
+    background-color: black;
+    padding: 0 25% 25% 25%;
+    color: green;
+}
+
+.user-last-input
+{
+    height: 20%;
+    flex-flow: column nowrap;
+    margin-bottom: 10;
+    font-size: 25;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.user-last-input > *
+{
+    text-wrap: true;
+    text-align: justify;
+}
+
+.user-current-input
+{
+    flex-flow: row-reverse nowrap;
+    height: 25%;
+    font-size: 40;
+    align-items: flex-end;
+}
+
+.user-current-input > *
+{
+    text-align: justify;
+    text-wrap: true;
+}
+
+.calculator-buttons
+{
+    height: 55%;
+}
+
+.calculator-buttons Button
+{
+    background-color: black;
+    color: green;
+    font-size: 25px;
+}

@@ -1,0 +1,37 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Калькулятор" />
+    <StackLayout class='calculator'>
+        <FlexboxLayout class="user-last-input">
+            <Label text="{{ previousMathExpression }}" />
+        </FlexboxLayout>
+        <FlexboxLayout class="user-current-input">
+            <Label text="{{ currentMathExpression }}" />
+        </FlexboxLayout>
+        <GridLayout class="calculator-buttons" columns="*, *, *, *" rows="*, *, *, *, *, *">
+            <Button text="(" row="0" col="0" tap="{{ AddElementToMathExpression }}" mathElement="(" />
+            <Button text=")" row="0" col="1" tap="{{ AddElementToMathExpression }}" mathElement=")" />
+            <Button text="⌫" row="0" col="2" tap="{{ RemoveLastElementFromMathExpression }}" />
+            <Button text="C" row="0" col="3" tap="{{ ClearMathExpression }}" />
+            <Button text="^" row="1" col="0" tap="{{ AddElementToMathExpression }}" mathElement="^" />
+            <Button text="," row="1" col="1" tap="{{ AddElementToMathExpression }}" mathElement="," />
+            <Button text="!" row="1" col="2"/>
+            <Button text="÷" row="1" col="3" tap="{{ AddElementToMathExpression }}" mathElement="/" />
+            <Button text="7" row="2" col="0" tap="{{ AddElementToMathExpression }}" mathElement="7" />
+            <Button text="8" row="2" col="1" tap="{{ AddElementToMathExpression }}" mathElement="8" />
+            <Button text="9" row="2" col="2" tap="{{ AddElementToMathExpression }}" mathElement="9" />
+            <Button text="×" row="2" col="3" tap="{{ AddElementToMathExpression }}" mathElement="*" />
+            <Button text="4" row="3" col="0" tap="{{ AddElementToMathExpression }}" mathElement="4" />
+            <Button text="5" row="3" col="1" tap="{{ AddElementToMathExpression }}" mathElement="5" />
+            <Button text="6" row="3" col="2" tap="{{ AddElementToMathExpression }}" mathElement="6" />
+            <Button text="−" row="3" col="3" tap="{{ AddElementToMathExpression }}" mathElement="-" />
+            <Button text="1" row="4" col="0" tap="{{ AddElementToMathExpression }}" mathElement="1" />
+            <Button text="2" row="4" col="1" tap="{{ AddElementToMathExpression }}" mathElement="2" />
+            <Button text="3" row="4" col="2" tap="{{ AddElementToMathExpression }}" mathElement="3" />
+            <Button text="+" row="4" col="3" tap="{{ AddElementToMathExpression }}" mathElement="+" />
+            <Button text="sin" row="5" col="0" tap="{{ AddElementToMathExpression }}" mathElement="sin" />
+            <Button text="0"  row="5" col="1" tap="{{ AddElementToMathExpression }}" mathElement="0" />
+            <Button text="cos" row="5" col="2" tap="{{ AddElementToMathExpression }}" mathElement="cos" />
+            <Button text="=" row="5" col="3" tap="{{ EvaluateMathExpression }}" />
+        </GridLayout>
+    </StackLayout>
+</Page>
